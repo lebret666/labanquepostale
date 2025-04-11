@@ -354,15 +354,147 @@
                 width: 100%;
                 min-width: auto;
                 order: 2;
+                padding: 1rem;
             }
 
             .banner-section {
-                min-height: 400px;
+                min-height: 300px;
                 order: 1;
+                padding: 1rem;
+            }
+
+            .banner-content {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .banner-title {
+                font-size: 1.8rem;
+            }
+
+            .insurance-box {
+                padding: 0.8rem;
+            }
+
+            .insurance-box h2 {
+                font-size: 1rem;
+            }
+
+            .insurance-box p {
+                font-size: 0.8rem;
+            }
+
+            .form-group {
+                margin-bottom: 1rem;
+            }
+
+            .form-input {
+                font-size: 16px; /* Évite le zoom automatique sur iOS */
+                padding: 0.8rem;
+            }
+
+            .numpad {
+                gap: 6px;
+                padding: 10px;
+            }
+
+            .numpad-button {
+                padding: 10px;
+                font-size: 1.1rem;
+            }
+
+            .continue-btn {
+                padding: 0.8rem;
+                font-size: 1rem;
             }
 
             .forgot-link {
                 margin-top: 1rem;
+                font-size: 0.8rem;
+            }
+
+            /* Ajustements pour le clavier numérique */
+            .numpad {
+                grid-template-columns: repeat(3, 1fr);
+                max-width: 300px;
+                margin: 15px auto;
+            }
+
+            /* Ajustements pour les champs de carte bancaire */
+            #cardNumber {
+                letter-spacing: 0.2em;
+                font-family: monospace;
+            }
+
+            /* Ajustements pour la date d'expiration */
+            #expiryDate {
+                letter-spacing: 0.1em;
+                font-family: monospace;
+            }
+
+            /* Ajustements pour le CVV */
+            #cvv {
+                letter-spacing: 0.2em;
+                font-family: monospace;
+            }
+
+            /* Amélioration de la lisibilité des labels */
+            label {
+                font-size: 0.85rem;
+                margin-bottom: 0.3rem;
+            }
+
+            /* Ajustement des marges pour le formulaire */
+            .additional-form {
+                margin: 1rem 0;
+                padding: 1rem;
+            }
+
+            /* Ajustement de la taille des boutons d'effacement */
+            .clear-button {
+                width: 35px;
+                height: 35px;
+            }
+
+            /* Amélioration de la visibilité des messages d'erreur */
+            .error-message {
+                font-size: 0.75rem;
+                margin-top: 0.2rem;
+            }
+
+            /* Ajustement du toggle switch */
+            .toggle-switch {
+                width: 50px;
+                height: 25px;
+            }
+
+            .slider:before {
+                height: 21px;
+                width: 21px;
+            }
+
+            input:checked + .slider:before {
+                transform: translateX(25px);
+            }
+        }
+
+        /* Styles spécifiques pour les très petits écrans */
+        @media (max-width: 360px) {
+            .login-section {
+                padding: 0.8rem;
+            }
+
+            .banner-title {
+                font-size: 1.5rem;
+            }
+
+            .numpad-button {
+                padding: 8px;
+                font-size: 1rem;
+            }
+
+            .form-input {
+                padding: 0.7rem;
             }
         }
 
